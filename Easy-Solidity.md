@@ -12,6 +12,7 @@
 =>  External: can only be called by functions outside the contract
 
 ### 2. Approximately, how large can a smart contract be?
+=>  A smart contract can be as large as 24,576 bytes or 24K bytes
 
 ### 3. What is the difference between create and create2?
 
