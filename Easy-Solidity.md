@@ -15,6 +15,8 @@
 =>  A smart contract can be as large as 24,576 bytes or 24K bytes
 
 ### 3. What is the difference between create and create2?
+=> The main difference lies in how calculate predict the address of a smart contract.
+CREATE allows the user to calculate or derive a contract address by the sender's address and a nonce, But it becomes less predictable when the nonce changes between the address calculation and contract creation as nounces are non-reuseable and must follow a sequential order. 
 
 ### 4. What major change with arithmetic happened with Solidity 0.8.0?
 
