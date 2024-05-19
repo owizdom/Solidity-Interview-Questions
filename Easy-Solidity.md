@@ -49,8 +49,8 @@ The CREATE2 opcode generates a smart contract with address determined by the com
 => Prior to the EIP-1559, the cost of dollar transactin was calculated as: 
 
           ==> ((GAS USED * GAS PRICE / 10^-9) * CURRENT ETHER PRICE.
-          
-    During the period when EIP-1559 was used, the miner gets 100% gas cost.
+
+   During the period when EIP-1559 was used, the miner gets 100% gas cost.
 
 ### 7. What are the challenges of creating a random number on the blockchain?
 
