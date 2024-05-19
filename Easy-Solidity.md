@@ -40,6 +40,7 @@ bytecode : The bytecode of the contract slated for deployment.
 The CREATE2 opcode generates a smart contract with address determined by the combination of salt value and contract creation code.
 
 ### 4. What major change with arithmetic happened with Solidity 0.8.0?
+=> It reverts with underflow/ overflow
 
 ### 5. What special CALL is required for proxies to work?
 
