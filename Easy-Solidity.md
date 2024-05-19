@@ -16,7 +16,28 @@
 
 ### 3. What is the difference between create and create2?
 => The main difference lies in how calculate predict the address of a smart contract.
-CREATE allows the user to calculate or derive a contract address by the sender's address and a nonce, But it becomes less predictable when the nonce changes between the address calculation and contract creation as nounces are non-reuseable and must follow a sequential order. 
+
+CREATE allows the user to calculate or derive a contract address by the sender's address and a nonce, But it becomes less predictable when the nonce changes between the address calculation and contract creation as nounces are non-reuseable and must follow a sequential order.
+
+new_address = hash(sender, nonce)
+
+while...
+
+CREATE2 determines the address by an arbitrary salt value and the init_code. It ensures that the address is not affected by future events and it's independent.
+
+new_address = hash(0xFF, sender, salt, bytecode)
+
+The computation of the new address is determined by the following factors which are : 
+
+0xFF :  serving as a constant to avert collisions with CREATE.
+
+sender: The sender’s address
+
+salt:  A salt (32 bytes), an arbitrary value supplied by the sender
+
+bytecode : The bytecode of the contract slated for deployment.
+
+The CREATE2 opcode generates a smart contract with address determined by the combination of salt value and contract creation code.
 
 ### 4. What major change with arithmetic happened with Solidity 0.8.0?
 
