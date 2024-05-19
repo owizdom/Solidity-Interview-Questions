@@ -1,6 +1,6 @@
-### Welcome to the first section to the RareSkills interview questions.
+# Welcome to the first section to the RareSkills interview questions.
 
-### Easy
+# Easy Solidity Interview Questions
 
 ### 1. What is the difference between private, internal, public, and external functions?
 
