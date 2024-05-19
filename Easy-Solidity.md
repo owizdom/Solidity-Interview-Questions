@@ -3,6 +3,10 @@
 # Easy Solidity Interview Questions
 
 ### 1. What is the difference between private, internal, public, and external functions?
+=>  Private: can only be called by functions in the same contract.
+=>  Internal: can only be called by functions in the same contract or in contracts that inherit from that contract.
+=>  Public: can be called by anyone.
+=>  External: can only be called by functions outside the contract
 
 ### 2. Approximately, how large can a smart contract be?
 
